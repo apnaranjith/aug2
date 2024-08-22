@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        res="";
+input=prompt("enter the number:");
+for(i of input){
+    c=0;
+    if(i>1){
+        for(j=2;j<i;j++){
+            if(i%j==0){
+                c++;
+                break;
+            }
+        }
+        if(c==0){
+            res=res+i;
+          
+        }
+    }
+}
+fr=""
+ d=res.split("").map(Number);
+ c=d.sort((a,b)=>a-b);
+ for(i=0;i<c.length;i++){
+     fr=fr+c[i];
+ }
+ 
+console.log(fr);
+
+
+
+    </script>
+</body>
+</html>
